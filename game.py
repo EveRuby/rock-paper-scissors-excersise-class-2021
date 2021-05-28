@@ -1,14 +1,13 @@
 import random
 import os
+import dotenv
 
-#print (10)
-#print (10, 20, "test")
+dotenv.load_dotenv()
 
 PLAYER_NAME = os.getenv("PLAYER_NAME")
-print (PLAYER_NAME)
 
 print ("------------START----------------")
-print("WELCOME",PLAYER_NAME,"TO ROCK, PAPER, SCISSORS GAME!")
+print(PLAYER_NAME, "WELCOME TO ROCK, PAPER, SCISSORS GAME!")
 
 user_choice = input ("PLEASE CHOOSE ONE OF THE FOLLOWING: 'rock', 'paper', 'scissors'")
 
