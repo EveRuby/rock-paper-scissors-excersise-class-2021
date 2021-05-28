@@ -1,9 +1,14 @@
-
-print("rock, paper, scissors, shoot!")
-
 import random
+import os
+
 #print (10)
 #print (10, 20, "test")
+
+PLAYER_NAME = os.getenv("PLAYER_NAME")
+print (PLAYER_NAME)
+
+print ("------------START----------------")
+print("WELCOME",PLAYER_NAME,"TO ROCK, PAPER, SCISSORS GAME!")
 
 user_choice = input ("PLEASE CHOOSE ONE OF THE FOLLOWING: 'rock', 'paper', 'scissors'")
 
@@ -18,6 +23,7 @@ if (user_choice == "rock") or (user_choice == "paper") or (user_choice == "sciss
     print("VALID. KEEP GOING")
 else:
     print("OOPS, INVALID INPUT. PLEASE TRY AGAIN")
+    print ("-------------END-----------------")
     exit()
 
 valid_options = ["rock", "paper", "scissors"]
@@ -49,4 +55,5 @@ elif user_choice == "scissors":
         print("IT'S A TIE")
 
 print("THIS IS THE END OF OUR GAME. PLEASE TRY AGAIN")
+print ("-------------END-----------------")
 
